@@ -1,0 +1,60 @@
+<!-- Footer -->
+<footer class="mainFooter font-small blue">
+	<div class="container text-center text-md-left">
+		<!-- Linha -->
+		<div class="row">
+			<!-- Coluna -->
+			<div class="col-md-4 mt-md-0 mt-3">
+				<!-- Brand Footer -->
+				<h5>
+					<% link_to "index.html", :class => "mw-brand", :relative => true, title: "Starter Kit MW" do %>
+						<%= image_tag "logo.svg", :class => "d-block w-100" %>
+					<% end %>
+				</h5>
+			</div>
+			<hr class="clearfix w-100 d-md-none pb-3">
+			<!-- Coluna -->
+			<div class="col-md-4 mb-md-0 mb-3">
+				<!-- Título -->
+				<h5>Title</h5>
+				<!-- Lista -->
+				<ul class="list-unstyled">
+					<li>
+						<%= link_to "About Us", "about.html", :relative => true, title: "About Us" %>
+					</li>
+					<li>
+						<%= link_to "Services", "services.html", :relative => true, title: "Services" %>
+					</li>
+					<li>
+						<%= link_to "The Team", "team.html", :relative => true, title: "The Team" %>
+					</li>
+					<li>
+						<%= link_to "Clients", "clients.html", :relative => true, title: "Clients" %>
+					</li>
+					<li>
+						<%= link_to "Contact", "contact.html", :relative => true, title: "Contact" %>
+					</li>
+				</ul>
+			</div>
+			<!-- Coluna -->
+			<div class="col-md-4 mb-md-0 mb-3">
+				<!-- Título -->
+				<h5>Title</h5>
+				<!-- Lista -->
+				<ul class="list-unstyled">
+					<li>Item 1</li>
+					<li>Item 2</li>
+					<li>Item 3</li>
+					<li>Item 4</li>
+					<li>Item 5</li>
+				</ul>
+			</div>
+			<!-- Linha -->
+			<hr class="clearfix w-100 d-md-none pb-3">
+		</div>
+	</div>
+	<!-- Copyright -->
+	<div class="footerCopyright text-center">
+		<small>Copyright © 2018<br>Company name here<br>All rights reserved</small>
+	</div>
+</footer>

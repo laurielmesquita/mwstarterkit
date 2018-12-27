@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="">
+    <%= partial 'partials/meta_social' %>
+    <%= partial 'partials/os_icons' %>
+    <title><%= current_page.data.title || "MW Starter Kit" %></title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <%= stylesheet_link_tag "main.bundle" %>
+  </head>
+  <body>
+    <h1 class="sr-only"><%= current_page.data.title || "MW Starter Kit" %></h1>
+    <%= partial 'partials/nav' %>
+    <%= yield %>
+    <%= partial 'partials/footer' %>
+    <%= javascript_include_tag "main.bundle" %>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-xl navbar-light bg-light">
+    
+    <!-- Título oculto -->
+    <h2 class="sr-only">Menu principal</h2>
+
+    <!-- Conteúdo -->
+    <div class="container">
+        
+        <!-- Brand Nav -->
+        <% link_to "index.html", :relative => true, :class => "navbar-brand mw-brand", title: "Starter Kit MW" do %>
+            <%= image_tag "logo.svg", :class => "d-block w-100" %>
+        <% end %>
+
+        <!-- Abrir/Fechar menu -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu esquerdo -->
+        <div class="collapse navbar-collapse" id="mainNavbar">
+
+            <ul class="navbar-nav mr-auto mr-4">
+
+                <li class="nav-item<%= " active" if current_page.data.title=="About Us" %>">
+                    <%= link_to "About Us", "about.html", :relative => true, title: "About Us", class: "nav-link" %>
+                    <% if current_page.data.title == "About Us" %>
+                    <span class="sr-only">(current)</span>
+                    <% end %>
+                </li>
+
+                <li class="nav-item<%= " active" if current_page.data.title=="Services" %>">
+                    <%= link_to "Services", "services.html", :relative => true, title: "Services", class: "nav-link" %>
+                    <% if current_page.data.title == "Services" %>
+                    <span class="sr-only">(current)</span>
+                    <% end %>
+                </li>
+
+                <li class="nav-item<%= " active" if current_page.data.title=="The Team" %>">
+                    <%= link_to "The Team", "team.html", :relative => true, title: "The Team", class: "nav-link" %>
+                    <% if current_page.data.title == "The Team" %>
+                    <span class="sr-only">(current)</span>
+                    <% end %>
+                </li>
+
+                <li class="nav-item<%= " active" if current_page.data.title=="Clients" %>">
+                    <%= link_to "Clients", "clients.html", :relative => true, title: "Clients", class: "nav-link" %>
+                    <% if current_page.data.title == "Clients" %>
+                    <span class="sr-only">(current)</span>
+                    <% end %>
+                </li>
+
+                <li class="nav-item<%= " active" if current_page.data.title=="Contact" %>">
+                    <%= link_to "Contact", "contact.html", :relative => true, title: "Contact", class: "nav-link" %>
+                    <% if current_page.data.title == "Contact" %>
+                    <span class="sr-only">(current)</span>
+                    <% end %>
+                </li>
+
+            </ul>
+
+            <!-- Menu direito -->
+            <form class="form-inline">
+               <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+               <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form> 
+
+        </div>
+
+    </div>
+
+</nav>
