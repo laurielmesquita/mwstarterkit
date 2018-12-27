@@ -1,7 +1,7 @@
 {
-  "name": "Steiner",
+  "name": "MW Starter Kit",
   "version": "1.0.0",
-  "description": "Steiner & Steiner front-end project",
+  "description": "Starter kit for front-end development",
   "main": "main.js",
   "author": "Lauriel Mesquita <laurielmesquita@me.com>",
   "repository": {

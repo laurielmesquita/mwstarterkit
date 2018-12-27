@@ -1,5 +1,6 @@
 MW Starter Kit - Middleman 4 and Webpack 4
 ==========================================
+Starter kit for front-end development.
 
 # Features
 - [Middleman 4](https://middlemanapp.com/)
